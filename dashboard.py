@@ -51,7 +51,7 @@ if st.button("���🔍 Scan Dependencies", type="primary"):
             try:
                 # Make POST request to FastAPI backend
                 response = requests.post(
-                    "http://localhost:8000/api/v1/audit",
+                    "https://cybersentinel-w01q.onrender.com/api/v1/audit",
                     json=payload,
                     timeout=30
                 )
